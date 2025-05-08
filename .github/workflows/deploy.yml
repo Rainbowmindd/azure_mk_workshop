@@ -86,8 +86,8 @@ jobs:
         
       - name: Update App Service
         run: |
-          az webapp config container set \
-            --name martynaexamplewebapp33 \ 
-            --resource-group rg-user6 \ 
-            --docker-custom-image-name ${{ secrets.ACR_LOGIN_SERVER }}/example-webapp:latest \
-            --docker-registry-server-url https://${{ secrets.ACR_LOGIN_SERVER }} \
+          az webapp config container set
+            --name martynaexamplewebapp33
+            --resource-group rg-user6
+            --docker-custom-image-name ${{ secrets.ACR_LOGIN_SERVER }}/example-webapp:latest
+            --docker-registry-server-url https://${{ secrets.ACR_LOGIN_SERVER }}
